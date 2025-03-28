@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Contact Form</title>
 </head>
 <body>
-<h1>Contact Form</h1>
-<form th:object="${contact}" th:action="${contact.id != null ? '/contacts/edit/' + contact.id : '/contacts/add'}" method="post">
-    <input type="hidden" th:field="*{id}">
-    <label>First Name:</label>
-    <input type="text" th:field="*{firstName}">
-    <br>
-    <label>Last Name:</label>
-    <input type="text" th:field="*{lastName}">
-    <br>
-    <label>Email:</label>
-    <input type="email" th:field="*{email}">
-    <br>
-    <label>Phone:</label>
-    <input type="text" th:field="*{phone}">
-    <br>
-    <button type="submit">Save</button>
+<h1 th:text="${contact.id == null ? 'Add New Contact' : 'Edit Contact'}"></h1>
+
+<form th:action="@{/contacts/save}" th:object="${contact}" method="post">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" th:field="*{firstName}"/>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" th:field="*{lastName}"/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" th:field="*{email}"/>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" th:field="*{phone}"/>
+
+    <button type="submit">Submit</button>
 </form>
 </body>
 </html>

@@ -1,4 +1,7 @@
 package com.example.skillboxthirdtask.exceptions;
 
-public class ContactNotFoundException {
+public class ContactNotFoundException extends RuntimeException {
+    public ContactNotFoundException(String message) {
+        super(message);
+    }
 }
