@@ -10,10 +10,5 @@
         <module name="skillbox-third-task.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="skillbox-first-task" target="19" />
-      <module name="skillbox-first-task.main" target="19" />
-      <module name="skillbox-first-task.test" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

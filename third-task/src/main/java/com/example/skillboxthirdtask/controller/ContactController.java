@@ -2,9 +2,8 @@ package com.example.skillboxthirdtask.controller;
 
 import com.example.skillboxthirdtask.contact.Contact;
 import com.example.skillboxthirdtask.services.ContactService;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,11 +11,13 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/contacts")
-@RequiredArgsConstructor
-@Service
 public class ContactController {
     private final ContactService contactService;
 
+    @Autowired
+    public ContactController(ContactService contactService) {
+        this.contactService = contactService;
+    }
     @GetMapping
     public String listContacts(Model model) {
         List<Contact> contacts = contactService.findAll();
@@ -55,4 +56,3 @@ public class ContactController {
         return "redirect:/contacts";
     }
 }
-

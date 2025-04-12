@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/skillbox-first-task.iml" filepath="$PROJECT_DIR$/.idea/modules/skillbox-first-task.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/skillbox-first-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/skillbox-first-task.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/skillbox-first-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/skillbox-first-task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/skillbox-second-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/skillbox-second-task.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/skillbox-third-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/skillbox-third-task.main.iml" />
     </modules>
   </component>
